@@ -3,6 +3,7 @@
     "*html": "html",
     "*njk": "html",
     "*.tmpl": "html",
-    "ostream": "cpp"
+    "ostream": "cpp",
+    "algorithm": "cpp"
   }
 }
