@@ -5,6 +5,11 @@
     "*.tmpl": "html",
     "ostream": "cpp",
     "algorithm": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "vector": "cpp",
+    "__tree": "cpp",
+    "bitset": "cpp",
+    "set": "cpp",
+    "random": "cpp"
   }
 }
