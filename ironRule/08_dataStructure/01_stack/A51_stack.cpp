@@ -18,7 +18,7 @@ int main() {
   for (int i = 1; i <= Q; i++) {
     if (QueryType[i] == 1) S.push(x[i]);
     if (QueryType[i] == 2) cout << S.top() << endl;
-    if (QueryType[i] == 3) S.top();
+    if (QueryType[i] == 3) S.pop();
   }
   return 0;
 }
