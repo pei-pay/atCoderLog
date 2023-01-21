@@ -2,13 +2,13 @@
 using namespace std;
 
 /**
- * 単純な解法
- *  xが「2 〜 x-1」で割り切れるかどうかを順番に調べる
+ * 効率的な解法
+ *  xが「2 〜 √x」で割り切れるかどうかを順番に調べる
  *
- * 計算量はO(x)なので、あまり効率的ではない
+ * 計算量はO(√x)
 */
 bool isPrime(int x) {
-  for (int i = 2; i <= x - 1; i++) {
+  for (int i = 2; i * i <= x; i++) {
     if (x % i == 0) return false;
   }
   return true;
