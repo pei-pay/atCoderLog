@@ -32,6 +32,7 @@
     "unordered_set": "cpp",
     "utility": "cpp",
     "ranges": "cpp",
-    "iosfwd": "cpp"
+    "iosfwd": "cpp",
+    "__locale": "cpp"
   }
 }
