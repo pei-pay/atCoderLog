@@ -34,7 +34,7 @@ public:
     if (RootU == RootV) return; // u と v が同じグループなら処理を行わない
 
     if (siz[RootU] < siz[RootV]) {
-      par[RootU] == RootV;
+      par[RootU] = RootV;
       siz[RootV] = siz[RootU] + siz[RootV];
     }
     else {
