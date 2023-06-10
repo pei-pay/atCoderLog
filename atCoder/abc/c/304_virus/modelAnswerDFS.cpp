@@ -2,7 +2,6 @@
 #include <vector>
 using namespace std;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
-#define rep1(i, n) for(int i = 1; i <= (n); ++i)
 
 long long n, d;
 vector<long long> x, y;
