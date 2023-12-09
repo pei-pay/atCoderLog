@@ -3,6 +3,9 @@
 using namespace std;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
 
+/*
+ * 敗因: 場合分によって答えが求まることに気づけなかった。2分探索で解こうとしていた。
+*/
 int main() {
   int n, l, r;
   cin >> n >> l >> r;
