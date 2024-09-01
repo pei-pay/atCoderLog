@@ -5,6 +5,7 @@ using namespace std;
 
 /*
  * TLE
+ * O(H*N = 10^14)
  */
 int main() {
   int n;
