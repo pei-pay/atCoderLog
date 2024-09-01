@@ -3,6 +3,8 @@ using namespace std;
 
 long long N, K;
 long long A[200009];
+// 最初に街 u に訪れた時: First[u]
+// 2回目に街 u に訪れた時: Second[u]
 long long First[200009], Second[200009];
 
 int main() {
