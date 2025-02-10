@@ -1,24 +1,22 @@
 #include <iostream>
 using namespace std;
+#define rep(i, n) for(int i = 0; i <= (n); ++i)
 
 int main() {
-  int N, Y;
-  cin >> N >> Y;
-  int resA = -1, resB = -1, resC = -1;
+  int n, y;
+  cin >> n >> y;
 
-  for(int a = 0; a <= N; a++) {
-    for(int b = 0; b + a <= N; b++) {
-      int c = N - a - b;
-      int total = 10000*a + 5000*b + 1000*c;
-      if(total == Y) {
-        resA = a;
-        resB = b;
-        resC = c;
+  rep(a, n) {
+    rep(b, n - a) {
+      int c = n - a - b; 
+      if (10000 * a + 5000 * b + 1000 * c == y) {
+        cout << a << " " << b << " " << c << endl;
+        return 0;
       }
     }
   }
 
-  cout << resA << " " << resB << " " << resC << endl;
+  cout << -1 << " " << -1 << " " << -1 << endl;
 
   return 0;
 }
