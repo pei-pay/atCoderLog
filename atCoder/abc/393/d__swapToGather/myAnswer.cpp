@@ -4,9 +4,12 @@ using namespace std;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
 
 /**
- * 時間間に合わず
+ * Result: WA
+ * 
+ * 時間間に合わず...
  *
  * 1を真ん中に寄せる方法で解きたいが、うまくいかず...
+ * -> s の真ん中の値ではなくて、1がある場所の中の中央値に寄せるのが正しい
  */
 int main() {
   int n;
