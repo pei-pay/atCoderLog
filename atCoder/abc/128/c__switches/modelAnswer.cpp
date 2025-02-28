@@ -23,7 +23,6 @@ int main() {
   int ans = 0;
   // 全てのスイッチのオン・オフの組み合わせを試す
   rep(bit, 1 << n) {
-    cout << "bit: " << bit << endl;
     bool ok = true;
     // 各電球について条件をチェック
     rep(i, m) {
