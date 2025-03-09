@@ -36,6 +36,7 @@ int main() {
   }
 
   for (int i = bs; i < n; i++) {
+    if (i > m - 1) break;
     ll x = b[i] + w[i];
     if (x + ans > ans) {
       ans = x + ans;
