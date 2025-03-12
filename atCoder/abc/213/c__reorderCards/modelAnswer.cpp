@@ -10,7 +10,7 @@ vi compress(vi a) {
   map<int, int> mp;
   rep(i, n) mp[a[i]] = 0;
   int id = 1;
-  for(auto& p : mp) p.second = id++;
+  for (auto& p : mp) p.second = id++;
   rep(i, n) a[i] = mp[a[i]];
   return a;
 }
@@ -26,6 +26,5 @@ int main() {
     printf("%d %d\n", a[i], b[i]);
   }
 
-
-return 0;
+  return 0;
 }
