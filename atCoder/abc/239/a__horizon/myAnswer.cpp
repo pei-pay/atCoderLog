@@ -2,6 +2,10 @@
 #include <cmath>
 using namespace std;
 
+/**
+ * WA
+ * 相対誤差が 10^6 以下にならない
+ */
 int main() {
   long double h;
   cin >> h;
