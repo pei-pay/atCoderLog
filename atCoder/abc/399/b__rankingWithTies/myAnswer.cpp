@@ -17,17 +17,14 @@ int main() {
   sort(p.rbegin(), p.rend());
   int r = 1;
   int mx = p[0].first;
-  int c = 1;
   vector<P> ans;
   rep(i, n) {
     if (p[i].first == mx) {
       ans.push_back({ p[i].second, r });
-      c++;
     }
     else {
       mx = p[i].first;
-      r = c;
-      c++;
+      r = i + 1;
       ans.push_back({ p[i].second, r });
     }
   }
