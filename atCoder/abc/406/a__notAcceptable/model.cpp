@@ -1,13 +1,12 @@
 #include <iostream>
 using namespace std;
+using P = pair<int, int>;
 
 int main() {
   int a, b, c, d;
   cin >> a >> b >> c >> d;
 
-  if (a > c) cout << "Yes" << endl;
-  else if (a < c) cout << "No" << endl;
-  else if (b > d) cout << "Yes" << endl;
+  if (P(c, d) < P(a, b)) cout << "Yes" << endl;
   else cout << "No" << endl;
 
   return 0;
