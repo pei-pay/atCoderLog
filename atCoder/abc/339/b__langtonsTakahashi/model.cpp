@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 #define rep(i, n) for(int i = 0; i < (n); ++i)
+using vi = vector<int>;
 
 const int di[] = {-1, 0, 1, 0};
 const int dj[] = {0, 1, 0, -1};
@@ -14,7 +15,7 @@ int main() {
   int i = 0, j = 0, v = 0;
   rep(ti, n) {
     if(s[i][j] == '.') {
-      s[i][j] = 'w';
+      s[i][j] = '#';
       v+=1;
     } else {
       s[i][j] = '.';
