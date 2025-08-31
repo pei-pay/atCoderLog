@@ -11,9 +11,8 @@ int main() {
   cin >> n >> q;
   vi a(n);
   rep(i, n) cin >> a[i];
-  int maxA = *max_element(a.begin(), a.end());
+  int m = *max_element(a.begin(), a.end());
 
-  const int m = 1e6;
   vector<ll> x(m + 1);
   rep(i, n) x[a[i]]++;
 
@@ -23,7 +22,7 @@ int main() {
   rep(qi, q) {
     int b;
     cin >> b;
-    if (maxA < b) {
+    if (m < b) {
       cout << -1 << endl;
       continue;
     }
