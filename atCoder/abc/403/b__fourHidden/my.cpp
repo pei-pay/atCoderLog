@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * WA
+ */
 int main() {
   string t, u;
   cin >> t >> u;
