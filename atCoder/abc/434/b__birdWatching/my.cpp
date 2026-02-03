@@ -14,7 +14,7 @@ int main() {
     x[a - 1].second += 1;
   }
   rep(i, m) {
-    double ans = x[i].first / x[i].second;
+    double ans = double(x[i].first) / double(x[i].second);
     printf("%.10f\n", ans);
   }
   return 0;
